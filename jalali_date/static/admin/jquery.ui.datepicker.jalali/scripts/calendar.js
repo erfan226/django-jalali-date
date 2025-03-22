@@ -81,8 +81,11 @@ function jd_to_islamic(jd)
 
 function leap_persian(year)
 {
-    return ((((((year - ((year > 0) ? 474 : 473)) % 2820) + 474) + 38) * 682) % 2816) < 682;
+    let cycleYear = (year - 474) % 2820;
+    return (cycleYear * 682 % 2816) < 682;
+    // return ((((((year - ((year > 0) ? 474 : 473)) % 2820) + 474) + 38) * 682) % 2816) < 682;
 }
+console.log(leap_persian(1404))
 var PERSIAN_EPOCH = 1948320.5;
 function persian_to_jd(year, month, day)
 {
