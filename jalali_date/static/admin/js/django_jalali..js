@@ -65,7 +65,8 @@ function jd_to_islamic(e) {
   );
 }
 function leap_persian(e) {
-  return (682 * (((e - (e > 0 ? 474 : 473)) % 2820) + 474 + 38)) % 2816 < 682;
+  let y = (e > 0) ? e - 474 : e - 473;
+  return [1,5,9,13,17,21,25,29].includes((y%2820+474)%33);
 }
 function persian_to_jd(e, t, n) {
   var i, r;
