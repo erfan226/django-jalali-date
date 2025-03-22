@@ -1177,13 +1177,11 @@ function jd_to_islamic(jd)
 
 //  LEAP_PERSIAN  --  Is a given year a leap year in the Persian calendar ?
 
-function leap_persian(year)
-{
-    let cycleYear = (year - 474) % 2820;
-    return (cycleYear * 682 % 2816) < 682;
-    // return ((((((year - ((year > 0) ? 474 : 473)) % 2820) + 474) + 38) * 682) % 2816) < 682;
+function leap_persian(year) {
+    let y = (year > 0) ? year - 474 : year - 473;
+    let mod = (y % 2820) + 474;
+    return [1, 5, 9, 13, 17, 21, 25, 29].includes(mod % 33);
 }
-console.log(leap_persian(1404))
 
 //  PERSIAN_TO_JD  --  Determine Julian day from Persian date
 
