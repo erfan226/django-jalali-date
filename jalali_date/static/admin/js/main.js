@@ -23,7 +23,7 @@ window.onload = function () {
             separatorChars: {
                 date: "/"
             },
-            time: true,
+            time: false,
             zIndex: 999999999,
             hasSecond: false,
             hideAfterChange: true,
