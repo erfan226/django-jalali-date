@@ -7,10 +7,12 @@ $(document).ready(function () {
         JQ = django.jQuery;
     }
 
-    JQ(".jalali_date-date").datepicker({
-        dateFormat: "yy-mm-dd",
-        changeMonth: !0,
-        changeYear: !0,
-        yearRange: "c-5:c+5"
-    })
+    // JQ(".jalali_date-date").datepicker({
+    //     dateFormat: "yy-mm-dd",
+    //     changeMonth: !0,
+    //     changeYear: !0,
+    //     yearRange: "c-5:c+5"
+    // })
+    jalaliDatepicker.startWatch();
+
 });
