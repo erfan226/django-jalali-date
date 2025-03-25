@@ -9,8 +9,6 @@ function mod(a, b) {return a - (b * Math.floor(a / b));}
 */
 function leap_gregorian(year)
 {
-    console.log(year, ((year % 4) == 0) &&
-    (!(((year % 100) == 0) && ((year % 400) != 0))))
     return ((year % 4) == 0) &&
             (!(((year % 100) == 0) && ((year % 400) != 0)));
 }
@@ -83,6 +81,8 @@ function jd_to_islamic(jd)
 
 function leap_persian(year) {
     let y = (year > 0) ? year - 474 : year - 473;
+    console.log(year, [1,5,9,13,17,21,25,29].includes((y%2820+474)%33))
+
     return [1,5,9,13,17,21,25,29].includes((y%2820+474)%33);
 }
 var PERSIAN_EPOCH = 1948320.5;

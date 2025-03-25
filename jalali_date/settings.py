@@ -10,7 +10,8 @@ JALALI_DATE_DEFAULTS = {
     },
     'Static': {
         'js': [
-            'admin/js/django_jalali.min.js',
+            # 'admin/js/django_jalali.min.js',
+            'admin/jalalidatepicker.min.js'
             # or
             # 'admin/jquery.ui.datepicker.jalali/scripts/jquery.ui.core.js',
             # 'admin/jquery.ui.datepicker.jalali/scripts/calendar.js',
@@ -20,7 +21,8 @@ JALALI_DATE_DEFAULTS = {
         ],
         'css': {
             'all': [
-                'admin/jquery.ui.datepicker.jalali/themes/base/jquery-ui.min.css',
+                # 'admin/jquery.ui.datepicker.jalali/themes/base/jquery-ui.min.css',
+                'admin/jalalidatepicker.min.css',
             ]
         }
     },

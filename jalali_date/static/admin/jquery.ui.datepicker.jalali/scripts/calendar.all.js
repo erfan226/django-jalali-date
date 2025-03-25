@@ -704,8 +704,6 @@ function TestSomething()
 
 function leap_gregorian(year)
 {
-    console.log(year, ((year % 4) == 0) &&
-    (!(((year % 100) == 0) && ((year % 400) != 0))))
     return ((year % 4) == 0) &&
             (!(((year % 100) == 0) && ((year % 400) != 0)));
 }
@@ -762,6 +760,7 @@ function jd_to_gregorian(jd) {
 
 function n_weeks(weekday, jd, nthweek)
 {
+    console.log(weekday, jd, nthweek)
     var j = 7 * nthweek;
 
     if (nthweek > 0) {
