@@ -11,13 +11,13 @@ JALALI_DATE_DEFAULTS = {
     'Static': {
         'js': [
             # 'admin/js/django_jalali.min.js',
-            'admin/jalalidatepicker.min.js'
+            'admin/jalalidatepicker.min.js',
+            'admin/js/main.js',
             # or
             # 'admin/jquery.ui.datepicker.jalali/scripts/jquery.ui.core.js',
             # 'admin/jquery.ui.datepicker.jalali/scripts/calendar.js',
             # 'admin/jquery.ui.datepicker.jalali/scripts/jquery.ui.datepicker-cc.js',
             # 'admin/jquery.ui.datepicker.jalali/scripts/jquery.ui.datepicker-cc-fa.js',
-            # 'admin/js/main.js',
         ],
         'css': {
             'all': [
