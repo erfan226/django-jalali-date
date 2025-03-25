@@ -9,6 +9,8 @@ function mod(a, b) {return a - (b * Math.floor(a / b));}
 */
 function leap_gregorian(year)
 {
+    console.log(year, ((year % 4) == 0) &&
+    (!(((year % 100) == 0) && ((year % 400) != 0))))
     return ((year % 4) == 0) &&
             (!(((year % 100) == 0) && ((year % 400) != 0)));
 }

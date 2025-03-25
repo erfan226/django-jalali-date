@@ -2,6 +2,7 @@ function mod(e, t) {
   return e - t * Math.floor(e / t);
 }
 function leap_gregorian(e) {
+    console.log(e, e % 4 == 0 && !(e % 100 == 0 && e % 400 != 0))
   return e % 4 == 0 && !(e % 100 == 0 && e % 400 != 0);
 }
 function gregorian_to_jd(e, t, n) {
